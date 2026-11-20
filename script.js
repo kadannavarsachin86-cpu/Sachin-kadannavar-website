@@ -1,7 +1,7 @@
 (function(){
   function pills(id,a){var h=a.map(function(x){return '<span class="chip">'+x+'</span>'}).join('');document.getElementById(id).innerHTML=h+h}
   pills("m1",["Python","Java","HTML","CSS","MySQL","NumPy","Pandas","Matplotlib","Scikit-learn","Flask"]);
-  pills("m2",["Git","GitHub","VS Code","Tableau","Data Analysis","Machine Learning","Recommendation Systems","Data Visualization","EDA"]);
+  pills("m2",["Git","GitHub","VS Code","Tableau","Data Analysis","Machine Learning","Recommendation Systems","Data Visualization"]);
   pills("m3",["Tata GenAI Data Analytics (Forage)","Daikibo Telemetry Task (Forage)","Data Science Internship, Apponix"]);
   var n=0,pc=document.getElementById("pc"),pb=document.getElementById("pb"),ld=document.getElementById("ld");
   var iv=setInterval(function(){n+=Math.ceil(Math.random()*6);if(n>=100){n=100;clearInterval(iv);setTimeout(function(){ld.classList.add("out")},450)}pc.textContent=n+"%";pb.style.width=n+"%"},40);
